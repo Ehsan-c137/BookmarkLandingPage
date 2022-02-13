@@ -44,9 +44,9 @@ Medium: 11px
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
-$primary-red: hsl(0, 94%, 66%);
-$primary-blue: hsl(231, 69%, 60%);
-$Dark-Blue: hsl(229, 31%, 21%);
+$primary-red: hsl(0, 94%, 66%); // #fa5757
+$primary-blue: hsl(231, 69%, 60%); //#5368df
+$Dark-Blue: hsl(229, 31%, 21%); //	#252b46
 $Grayish-Blue: hsl(229, 8%, 60%);
 $light-gray-color: #f7f7f7;
 
@@ -58,10 +58,14 @@ $light-gray-color: #f7f7f7;
 
 html {
    font-size: 62.5%;
-   font-family: "Rubik", sans-serif;
+   overflow-x: hidden;
 }
 html:focus-within {
    scroll-behavior: smooth;
+}
+body {
+   font-family: "Rubik", sans-serif;
+   overflow-x: hidden;
 }
 
 ul,
@@ -72,4 +76,6 @@ a {
 
 .container {
    padding: 6.4rem 12.8rem;
+   max-width: 120rem;
+   margin: 0 auto;
 }
