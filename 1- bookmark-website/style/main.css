@@ -132,6 +132,10 @@ a {
   display: none;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1014,6 +1018,9 @@ footer .footer-right img:hover {
   .feature-section .tabbed-active {
     border-bottom: 90% solid #fa5757;
   }
+  .feature-tabbed-container {
+    width: 122%;
+  }
   .feature-tab {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1053,6 +1060,180 @@ footer .footer-right img:hover {
   .add-to-firefox,
   .add-to-opera {
     margin-top: 0rem;
+  }
+  .question-header {
+    width: 20rem;
+    text-align: center;
+  }
+  .question-header-description {
+    width: 20rem;
+  }
+  .question-box {
+    width: 25rem;
+  }
+  .contact-us-container form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+  .contact-us-container form .input-container {
+    margin-right: 0rem;
+  }
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3.2rem;
+  }
+  footer .footer-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-left img {
+    margin-right: 0rem;
+  }
+  footer .footer-left ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 3.2rem;
+  }
+  footer .footer-right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .active-hamburger {
+    display: block;
+    position: relative;
+  }
+  .active-hamburger .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+  }
+  .active-hamburger .header img {
+    -webkit-filter: invert(100%) sepia(3%) saturate(100%) hue-rotate(185deg) brightness(113%) contrast(89%);
+            filter: invert(100%) sepia(3%) saturate(100%) hue-rotate(185deg) brightness(113%) contrast(89%);
+  }
+  .active-hamburger #hamburger .line {
+    stroke: white !important;
+  }
+  .active-hamburger .hamburger-menu {
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2f354fde;
+  }
+  .active-hamburger .hamburger-menu ul {
+    display: block;
+    margin-top: 6.6rem;
+  }
+  .active-hamburger .hamburger-menu li {
+    color: white;
+    cursor: pointer;
+    font-size: 2.4rem;
+  }
+  .active-hamburger .hamburger-menu .ham-btn {
+    padding: 1.6rem 8.6rem;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.467);
+  }
+  .active-hamburger .hamburger-menu .ham-btn:first-of-type {
+    border-top: 2px solid rgba(128, 128, 128, 0.467);
+  }
+  .active-hamburger .hamburger-menu .ham-btn:last-of-type {
+    border-bottom: 2px solid rgba(128, 128, 128, 0.467);
+  }
+  .active-hamburger .hamburger-menu .hamburgur-login-btn {
+    margin-top: 3.2rem;
+    border: 2px solid white;
+    border-radius: 9px;
+    padding: 1.4rem 0rem;
+  }
+  .active-hamburger .hamburger-menu .hamburgur-logos img {
+    margin: 0rem 1.6rem;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 26em) {
+  .container {
+    padding: 0rem;
+    margin: 3.2rem 0;
+  }
+  .header {
+    padding: 3.2rem;
+  }
+  .landing-img::after {
+    -webkit-transform: translateX(-15rem);
+            transform: translateX(-15rem);
+  }
+  .section-landing .landing-description-text {
+    max-width: 100%;
+  }
+  .landing-header {
+    font-size: 3rem;
+  }
+  .landing-btn--1,
+  .landing-btn--2 {
+    padding: 1rem 1.5rem !important;
+  }
+  .feature-description {
+    width: 30rem !important;
+  }
+  .tabbed-img {
+    max-width: 25rem;
+  }
+  .tab-description-text {
+    padding: 0rem 6.2rem;
+    margin: 1.2rem auto;
+  }
+  .tab-description-text {
+    width: 87%;
+  }
+  .download-header-dec {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=main.css.map */
