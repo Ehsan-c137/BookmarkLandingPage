@@ -381,10 +381,10 @@ a {
   z-index: -1;
   position: absolute;
   background-color: #5368df;
-  width: 140%;
+  width: 170%;
   height: 100%;
-  -webkit-transform: translate(-30rem, 8rem);
-          transform: translate(-30rem, 8rem);
+  -webkit-transform: translate(-50rem, 8rem);
+          transform: translate(-50rem, 8rem);
   border-top-right-radius: 40%;
   border-end-end-radius: 40%;
 }
