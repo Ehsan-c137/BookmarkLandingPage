@@ -3,16 +3,30 @@
 //**************/
 //  hamburgur /
 //**************/
-const hamburgerBtn = document.querySelector("#hamburger");
-hamburgerBtn.addEventListener("click", function () {
-   document.querySelector("body").classList.toggle("active-hamburger");
+const hamBtn = document.querySelector("#hamburger");
+const hamMenuContainer = document.querySelector(".hamburger-menu");
+const header = document.querySelector(".header");
+
+hamBtn.addEventListener("click", function () {
+   hamMenuContainer.classList.toggle("active-modal");
+   header.classList.toggle("active-header");
+});
+
+header.addEventListener("click", function () {
+   if (header.classList.contains("active-header")) {
+      document.body.style.position = "fixed";
+      hamBtn.style.right = "4.8rem";
+   } else {
+      document.body.style.position = "";
+      hamBtn.style.right = "3.2rem";
+   }
 });
 
 document
    .querySelector(".go-to-feature-tab")
    .addEventListener("click", function () {
-      // close the ham menue
-      document.querySelector("body").classList.toggle("active-hamburger");
+      // close the ham menu
+      document.querySelector(".header").classList.toggle("active-hamburger");
       // change the the close ham icon to normal
       document.querySelector("#hamburger").classList.toggle("open");
    });

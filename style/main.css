@@ -133,8 +133,8 @@ a {
 }
 
 .hamburger-menu {
-  -webkit-transform: translateX(30rem);
-          transform: translateX(30rem);
+  -webkit-transform: translate(13rem, 29rem);
+          transform: translate(13rem, 29rem);
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
@@ -971,13 +971,83 @@ footer .footer-right img:hover {
 
 @media (max-width: 35em) {
   .header {
-    padding: 4.8rem;
+    position: relative;
+    padding: 3.2rem;
+    z-index: 4;
   }
   .header-links {
     display: none;
   }
   #hamburger {
     display: block;
+    position: absolute;
+    right: 3.2rem;
+  }
+  .active-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .active-header #hamburger .line {
+    stroke: white !important;
+  }
+  .active-header img {
+    -webkit-filter: invert(100%) sepia(3%) saturate(100%) hue-rotate(185deg) brightness(113%) contrast(89%);
+            filter: invert(100%) sepia(3%) saturate(100%) hue-rotate(185deg) brightness(113%) contrast(89%);
+  }
+  .active-modal {
+    z-index: -1;
+    position: absolute;
+    width: 110vw;
+    height: 120vh;
+    background-color: #2f354fde;
+    -webkit-transform: translate(-5rem, 31rem);
+            transform: translate(-5rem, 31rem);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
+  }
+  .active-modal ul {
+    display: block;
+    margin-top: 14.8rem;
+  }
+  .active-modal li {
+    color: white;
+    cursor: pointer;
+    font-size: 2.4rem;
+  }
+  .active-modal .ham-btn {
+    padding: 1.6rem 8.6rem;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.467);
+  }
+  .active-modal .ham-btn:first-of-type {
+    border-top: 2px solid rgba(128, 128, 128, 0.467);
+  }
+  .active-modal .ham-btn:last-of-type {
+    border-bottom: 2px solid rgba(128, 128, 128, 0.467);
+  }
+  .active-modal .hamburgur-login-btn {
+    margin-top: 3.2rem;
+    border: 2px solid white;
+    border-radius: 9px;
+    padding: 1.4rem 0rem;
+  }
+  .active-modal .hamburgur-logos img {
+    margin: 0rem 1.6rem;
+    cursor: pointer;
   }
   .section-landing {
     -ms-grid-columns: 1fr;
@@ -1131,79 +1201,11 @@ footer .footer-right img:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .active-hamburger {
-    display: block;
-    position: relative;
-  }
-  .active-hamburger .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    position: absolute;
-    z-index: 3;
-    width: 100%;
-  }
-  .active-hamburger .header img {
-    -webkit-filter: invert(100%) sepia(3%) saturate(100%) hue-rotate(185deg) brightness(113%) contrast(89%);
-            filter: invert(100%) sepia(3%) saturate(100%) hue-rotate(185deg) brightness(113%) contrast(89%);
-  }
-  .active-hamburger #hamburger .line {
-    stroke: white !important;
-  }
-  .active-hamburger .hamburger-menu {
-    overflow: hidden;
-    position: absolute;
-    z-index: 2;
-    -webkit-transform: translateX(0rem);
-            transform: translateX(0rem);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: #2f354fde;
-  }
-  .active-hamburger .hamburger-menu ul {
-    display: block;
-    margin-top: 6.6rem;
-  }
-  .active-hamburger .hamburger-menu li {
-    color: white;
-    cursor: pointer;
-    font-size: 2.4rem;
-  }
-  .active-hamburger .hamburger-menu .ham-btn {
-    padding: 1.6rem 8.6rem;
-    border-bottom: 2px solid rgba(128, 128, 128, 0.467);
-  }
-  .active-hamburger .hamburger-menu .ham-btn:first-of-type {
-    border-top: 2px solid rgba(128, 128, 128, 0.467);
-  }
-  .active-hamburger .hamburger-menu .ham-btn:last-of-type {
-    border-bottom: 2px solid rgba(128, 128, 128, 0.467);
-  }
-  .active-hamburger .hamburger-menu .hamburgur-login-btn {
-    margin-top: 3.2rem;
-    border: 2px solid white;
-    border-radius: 9px;
-    padding: 1.4rem 0rem;
-  }
-  .active-hamburger .hamburger-menu .hamburgur-logos img {
-    margin: 0rem 1.6rem;
-    cursor: pointer;
+}
+
+@media (max-width: 31em) {
+  html {
+    font-size: 60%;
   }
 }
 
