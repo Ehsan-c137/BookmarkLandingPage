@@ -133,6 +133,14 @@ a {
 }
 
 .hamburger-menu {
+  -webkit-transform: translateX(30rem);
+          transform: translateX(30rem);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.hamburger-menu ul,
+.hamburger-menu img {
   display: none;
 }
 
@@ -1149,6 +1157,8 @@ footer .footer-right img:hover {
     overflow: hidden;
     position: absolute;
     z-index: 2;
+    -webkit-transform: translateX(0rem);
+            transform: translateX(0rem);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
