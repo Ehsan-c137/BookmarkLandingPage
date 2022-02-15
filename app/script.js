@@ -6,8 +6,16 @@
 const hamBtn = document.querySelector("#hamburger");
 const hamMenuContainer = document.querySelector(".hamburger-menu");
 const header = document.querySelector(".header");
+const hamFeatureBtn = document.querySelector(".go-to-feature-tab");
 
 hamBtn.addEventListener("click", function () {
+   hamMenuContainer.classList.toggle("active-modal");
+   header.classList.toggle("active-header");
+});
+hamFeatureBtn.addEventListener("click", function () {
+   document.body.style.position = "";
+   9;
+   hamBtn.style.right = "3.2rem";
    hamMenuContainer.classList.toggle("active-modal");
    header.classList.toggle("active-header");
 });
@@ -15,9 +23,10 @@ hamBtn.addEventListener("click", function () {
 header.addEventListener("click", function () {
    if (header.classList.contains("active-header")) {
       document.body.style.position = "fixed";
-      hamBtn.style.right = "4.8rem";
+      hamBtn.style.right = "5.2rem";
    } else {
       document.body.style.position = "";
+      9;
       hamBtn.style.right = "3.2rem";
    }
 });
@@ -115,6 +124,7 @@ contactToUsInput.forEach((inpEl) => {
 // smooth scroll
 ///******** */
 const featureLinks = document.querySelectorAll(".go-to-feature-tab");
+
 featureLinks.forEach((l) =>
    l.addEventListener("click", function (e) {
       e.preventDefault();
