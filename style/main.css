@@ -399,7 +399,7 @@ a {
 }
 
 .tabbed-description .tab-header {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .tab-description-text {
@@ -601,7 +601,7 @@ a {
   font-size: 1.6rem;
 }
 
-.question-box:hover h3 {
+.question-box:hover h2 {
   color: #fa5757;
 }
 
@@ -620,11 +620,12 @@ a {
   border-top: 2px solid rgba(128, 128, 128, 0.296);
 }
 
-.question-box .question h3 {
-  font-weight: 500;
+.question-box .question h2 {
+  font-weight: 400;
+  font-size: 1.8rem;
 }
 
-.question-box .question h3,
+.question-box .question h2,
 .question-box .question i {
   color: #252b46;
 }
