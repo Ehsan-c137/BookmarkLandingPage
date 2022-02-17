@@ -10,6 +10,9 @@ Medium: 500
 Semi-bold: 600
 Bold: 700
 
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
 - Line heights
 Default: 1
 Small: 1.05
@@ -40,10 +43,8 @@ Default: 9px
 Medium: 11px
 
 --- 07 WHITESPACE
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
+
 $primary-red: hsl(0, 94%, 66%); // #fa5757
 $primary-blue: hsl(231, 69%, 60%); //#5368df
 $Dark-Blue: hsl(229, 31%, 21%); //	#252b46
