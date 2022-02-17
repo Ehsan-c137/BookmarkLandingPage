@@ -165,14 +165,14 @@
    max-width: 210rem;
 }
 
-.tabbed-img::before {
+.tabbed-img::after {
    content: "";
    z-index: -1;
    position: absolute;
    background-color: $primary-blue;
    width: 170%;
    height: 100%;
-   transform: translate(-50rem, 8rem);
+   transform: translate(-92rem, 8rem);
    border-top-right-radius: 40%;
    border-end-end-radius: 40%;
 }
